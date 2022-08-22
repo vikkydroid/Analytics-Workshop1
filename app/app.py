@@ -10,6 +10,7 @@ def get_db_connection():
                                 database=os.environ['POSTGRES_DB'],
                                 user=os.environ['POSTGRES_USER'],
                                 password=os.environ['POSTGRES_PASSWORD'])
+                                //hola line
     except Exception as e:
         print(e)
         conn = psycopg2.connect(host='db',
